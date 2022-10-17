@@ -178,6 +178,7 @@ label:before {
     font-size: 17px;
     font-weight: 600;
     margin-left: 20px;
+    margin-top: 10px;
 }
 .charts-container .c-div {
     display: flex;
@@ -201,6 +202,9 @@ label:before {
     font-size: 0.8em;
     font-weight: lighter;
     line-height: 20px;
+}
+.c-div h5 {
+    color: rgba(255, 255, 255, 0.5);;
 }
 .charts-container {
     display: flex;
