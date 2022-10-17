@@ -22,18 +22,19 @@ body::-webkit-scrollbar {
 
 /* left nav styling */
 .navigation-section {
-    width: 7%;
     height: 55vh;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    margin-left: 12px;
-    margin-top: 5px;
-    /* position: fixed; */
+    padding-left: 12px;
+    padding-top: 5px;
+    position: fixed;
+    z-index: 30;
+    padding-bottom: 100vh;
+    padding-right: 20px;
 }
 
 .logo-container {
-    width: 10%;
     padding: 12px 6px;
     margin-bottom: 10px;
 }
@@ -46,7 +47,6 @@ body::-webkit-scrollbar {
 .nav-1,
 .nav-2
  {
-    width: 30%;
     display: flex;
     flex-direction: column;
     padding: 20px 10px;
@@ -81,12 +81,13 @@ body::-webkit-scrollbar {
 
 
 .body-section {
-    width: 100%;
+    width: 90%;
+    padding-left: 7%;
 }
 /* search-section styling */
 .search-section {
     position: sticky;
-    margin-left: 20px;
+    top: -11px;
 }
 label {
     position: relative;
@@ -102,7 +103,8 @@ label:before {
     background: url("img/home/search.svg") center / contain no-repeat;
 }
 .search-section input {
-    padding: 10px;
+    padding: 20px;
+    padding-left: 20px;
     width: 95%;
     border: none;
     background-color: #1D2123;
@@ -116,12 +118,13 @@ label:before {
 .hero-section {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     width: 100%;
     margin: 30px;
 }
 
 .left-container {
-    background-image: url(/img/home/background.png);
+    background-image: url(/img/home/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 40px;
@@ -204,7 +207,7 @@ label:before {
     line-height: 20px;
 }
 .c-div h5 {
-    color: rgba(255, 255, 255, 0.5);;
+    color: rgba(255, 255, 255, 0.5);
 }
 .charts-container {
     display: flex;
@@ -218,4 +221,39 @@ label:before {
 }
 .c-div img {
     width: 60px;
+    border-radius: 10px;
+}
+
+
+/* new releases section */
+.new-releases {
+    margin-left: 30px;
+}
+.new-releases h1 {
+    color: #fff;
+}
+.new-releases div {
+    margin-top: 20px;
+    display: flex;
+    overflow-x: auto;
+    width: 90%;
+}
+.new-releases div::-webkit-scrollbar {
+    display: none;
+}
+figure img {
+    border-radius: 30px;
+    width: 153px;
+    margin-right: 40px;
+}
+.figcaption-1 {
+    color: #fff;
+    font-size: 12px;
+    font-weight: lighter;
+}
+.figcaption-2 {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 10px;
+    font-weight: lighter;
+    margin-top: 5px;
 }
