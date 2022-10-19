@@ -23,15 +23,13 @@ body::-webkit-scrollbar {
 
 /* left nav styling */
 .navigation-section {
+    z-index: 30;
     height: 55vh;
     display: flex;
+    position: fixed;
     justify-content: space-between;
     flex-direction: column;
-    padding-left: 12px;
-    padding-top: 5px;
-    position: fixed;
-    z-index: 30;
-    padding-right: 20px;
+    padding: 5px 20px 0 12px;
 }
 
 .logo-container {
@@ -48,24 +46,29 @@ body::-webkit-scrollbar {
 .nav-2
  {
     display: flex;
-    flex-direction: column;
     padding: 20px 10px;
-    background-color: #1A1E1F;
     border-radius: 20px;
+    flex-direction: column;
+    background-color: #1A1E1F;
 }
 .nav-1 img {
     width: 2em;
     margin: 10px 0;
 }
-.nav-1 img:nth-child(2),
-.nav-1 img:nth-child(3),
-.nav-1 img:nth-child(4),
+.nav-1 img:not(:first-child),
 .nav-2 img
  {
     width: 1.3em;
     margin-left: 5px;
     margin-bottom: 15px;
-    cursor: pointer;
+    cursor: pointer;   
+}
+.nav-1 a:not(:first-child) {
+    font-size: 0.7em;
+    margin-left: 5px;
+}
+.nav-1 a:nth-child(1) {
+    font-size: 1em;
 }
 /* third div on the left nav */
 .nav-2 {
@@ -80,9 +83,11 @@ body::-webkit-scrollbar {
 
 
 
+
+
+
 .body-section {
     width: 100%;
-    /* padding-left: 7%; */
 }
 /* search-section styling */
 .search-section {
@@ -96,24 +101,23 @@ label {
   
 label:before {
     content: "";
-    position: absolute;
     left: 50px;
     top: 2px;
     bottom: 1px;
     width: 30px;
+    position: absolute;
     background: url("img/home/search.svg") center / contain no-repeat;
 }
 .search-section input {
-    font-size: 16px;
-    color: #fff;
-    margin-left: 30px;
-    padding: 10px;
-    padding-left: 60px;
     width: 95%;
+    color: #fff;
     border: none;
-    background-color: #1D2123;
-    margin-top: 0px;
+    padding: 10px;
+    font-size: 16px;
+    margin: 0px 0 0 30px;
+    padding-left: 60px;
     height: 55px;
+    background-color: #1D2123;
 }
 .search-section input::placeholder {
     font-size: 12px;
@@ -123,12 +127,13 @@ label:before {
 
 
 
+/* below search bar */
 .hero-section {
-    padding-left: 7%;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
     width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 7%;
     margin: 0px 30px;
 }
 
@@ -137,60 +142,59 @@ label:before {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 40px;
-    width: 50%;
     height: 45vh;
+    width: 50%;
 }
 
 .L-container {
-    margin: 40px 40px 0px 40px;
+    height: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 30vh;
+    margin: 40px 40px 0px 40px;
 }
 
 .L-container p:nth-child(1) {
-    font-size: 11px;
-    font-weight: lighter;
     color: #fff;
+    font-size: 11px;
     margin-bottom: 40px;
+    font-weight: lighter;
 }
 
 .L-container h1 {
-    font-size: 25px;
     color: #fff;
+    font-size: 25px;
 }
 
 .L-container p:nth-child(2) {
-    font-size: 12px;
-    color: #fff;
     width: 238px;
+    color: #fff;
+    font-size: 12px;
 }
-.likes {
+.L-container .likes {
+    width: 23%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 23%;
-    margin-top: 30px;
-    margin-bottom: -30px;
+    margin: 30px 0 -30px;
+    justify-content: space-between;   
 }
-.likes p {
+.L-container .likes p {
+    color: #fff;
     font-size: 11px;
     font-weight: lighter;
-    color: #fff;
 }
 
 
+/* right side of the hero section */
 .right-container {
-    margin-left: 2%;
     width: 24%;
+    margin-left: 2%;
 }
 .right-container h1 {
     color: #fff;
     font-size: 17px;
     font-weight: 600;
-    margin-left: 20px;
-    margin-top: 10px;
+    margin: 10px 0 0 20px;
 }
 .charts-container .c-div {
     display: flex;
@@ -220,15 +224,14 @@ label:before {
     color: rgba(255, 255, 255, 0.5);
 }
 .charts-container {
+    width: 140%;
+    margin: 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 140%;
-    margin: 15px;
-    padding: 15px 16px;
-    padding-right: 18px;
-    border-radius: 20px;
+    padding: 15px 18px 15px 16px;
     background-color: #1A1E1F;
+    border-radius: 20px;
 }
 .c-div img {
     width: 60px;
@@ -239,24 +242,23 @@ label:before {
 /* new releases section */
 .new-releases {
     padding-left: 7%;
-    margin-top: 20px;
-    margin-left: 30px;
+    margin: 20px 0 0 30px;
 }
 .new-releases h1 {
     color: #fff;
 }
 .new-releases div {
-    margin-top: 20px;
+    width: 88%;
     display: flex;
     overflow-x: auto;
-    width: 88%;
+    margin-top: 20px;
 }
 .new-releases div::-webkit-scrollbar {
     display: none;
 }
 figure img {
-    border-radius: 30px;
     width: 153px;
+    border-radius: 30px;
     margin-right: 40px;
 }
 .tweak {
@@ -268,40 +270,37 @@ figure img {
     font-weight: lighter;
 }
 .figcaption-2 {
-    color: rgba(255, 255, 255, 0.5);
     font-size: 10px;
-    font-weight: lighter;
     margin-top: 5px;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 
 
 /* controllers section */
 .controllers {
-    position: sticky;
-    bottom: -100px;
-    width: 100%;
-    bottom: 0px;
     left: -5px;
     top: 610px;
-    /* border-top: 1px solid rgba(16, 16, 16, 0.51); */
-    /* background-color: rgba(0, 0, 0, 0.61); */
+    width: 100%;
+    bottom: 0px;
+    position: sticky;
     backdrop-filter: blur(16px);
     filter: drop-shadow(0px -25px 100px rgba(16, 16, 16, 0.51));
 }
 .controller-container {
+    width: 87.5%;
     padding: 20px;
-    margin-bottom: 0px;
     display: flex;
+    margin-bottom: 0px;
     align-items: center;
     justify-content: space-between;
-    width: 87.5%;
 }
 .left-controller {
     width: 11%;
     display: flex;
+    margin-left: 9%;
     align-items: center;
-    margin-left: 8%;
 }
 .left-controller div {
     margin-bottom: 10px;
@@ -323,9 +322,9 @@ figure img {
     margin-right: 15px;
 }
 .controls {
+    gap: 92px;
     display: flex;
     align-items: center;
-    gap: 92px;
 }
 .middle-controller {
     display: flex;
@@ -337,37 +336,49 @@ figure img {
 }
 .play-btn {
     padding: 10px;
-    background-color: #FACD66;
     border-radius: 20px;
+    background-color: #FACD66;
     box-shadow: 1px 1px 20px 1px #FACD66;
 }
 .range-1 {
     width: 850px;
     margin-top: 30px;
 }
-.right-controller div {
-    display: flex;
-    align-items: center;
-    width: 100%;
-}
 input[type="range"]:nth-child(1) {
     -webkit-appearance: none;
-    margin-right: 15px;
-    height: 7px;
-    background: rgba(255, 255, 255, 0.6);
+    height: 5px;
     border-radius: 5px;
+    background: rgba(255, 255, 255, 0.04);
     background-image: linear-gradient(#FACD66, #FACD66);
     background-size: 70% 100%;
     background-repeat: no-repeat;
 }
 input[type="range"]:nth-child(1)::-webkit-slider-thumb {
     -webkit-appearance: none;
-    height: 15px;
     width: 15px;
-    border: 1px solid #FFFFFF;
+    height: 15px;
     border-radius: 50%;
     background: #FACD66;
-    /* cursor: ew-resize; */
-    box-shadow: 0 0 2px 0 rgba(255, 255, 255, 0.04);;
-    /* transition: background .3s ease-in-out; */
-  }
+    border: 1px solid #FFFFFF;
+    box-shadow: 0 0 2px 0 rgba(255, 255, 255, 0.04);
+}
+.right-controller div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.right-controller div img {
+    margin-right: 10px;
+}
+input[type="range"]:nth-child(2) {
+    -webkit-appearance: none;
+    height: 3px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.04);
+    background-image: linear-gradient(#FACD66, #FACD66);
+    background-size: 70% 100%;
+    background-repeat: no-repeat;
+}
+input[type="range"]:nth-child(2)::-webkit-slider-thumb {
+    display: none;
+}
