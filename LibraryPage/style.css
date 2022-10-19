@@ -80,3 +80,39 @@ body::-webkit-scrollbar {
     width: 1.2em;
     margin-left: 8px;
 }
+
+
+
+
+.search-section {
+    padding-left: 7%;
+    position: sticky;
+    top: -11px;
+}
+label {
+    position: relative;
+}
+  
+label:before {
+    content: "";
+    left: 50px;
+    top: 2px;
+    bottom: 1px;
+    width: 30px;
+    position: absolute;
+    background: url("/LibraryPage/img/search.svg") center / contain no-repeat;
+}
+.search-section input {
+    width: 95%;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    margin: 0px 0 0 30px;
+    padding-left: 60px;
+    height: 55px;
+    background-color: #1D2123;
+}
+.search-section input::placeholder {
+    font-size: 12px;
+}
