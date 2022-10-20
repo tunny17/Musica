@@ -259,3 +259,109 @@ label:before {
     font-size: 12px;
     font-weight: lighter;
 }
+
+/*  */
+/* controllers section */
+.controllers {
+    left: -5px;
+    top: 610px;
+    width: 100%;
+    bottom: 0px;
+    position: sticky;
+    backdrop-filter: blur(16px);
+    filter: drop-shadow(0px -25px 100px rgba(16, 16, 16, 0.51));
+}
+.controller-container {
+    width: 87.5%;
+    padding: 20px;
+    display: flex;
+    margin-bottom: 0px;
+    align-items: center;
+    justify-content: space-between;
+}
+.left-controller {
+    width: 11%;
+    display: flex;
+    margin-left: 9%;
+    align-items: center;
+}
+.left-controller div {
+    margin-bottom: 10px;
+}
+.left-controller h4,
+.left-controller p 
+{
+    font-size: 13px;
+    color: #FFFFFF;
+}
+.left-controller p {
+    font-size: 11px;
+    font-weight: lighter;
+}
+.left-controller img {
+    width: 32%;
+    height: 50px;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+.controls {
+    gap: 92px;
+    display: flex;
+    align-items: center;
+}
+.middle-controller {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.middle-controller img {
+    cursor: pointer;
+}
+.play-btn {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #FACD66;
+    box-shadow: 1px 1px 20px 1px #FACD66;
+}
+.range-1 {
+    width: 850px;
+    margin-top: 30px;
+}
+input[type="range"]:nth-child(1) {
+    -webkit-appearance: none;
+    height: 5px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.04);
+    background-image: linear-gradient(#FACD66, #FACD66);
+    background-size: 70% 100%;
+    background-repeat: no-repeat;
+}
+input[type="range"]:nth-child(1)::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #FACD66;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0 0 2px 0 rgba(255, 255, 255, 0.04);
+}
+.right-controller div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.right-controller div img {
+    margin-right: 10px;
+}
+input[type="range"]:nth-child(2) {
+    -webkit-appearance: none;
+    height: 3px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.04);
+    background-image: linear-gradient(#FACD66, #FACD66);
+    background-size: 70% 100%;
+    background-repeat: no-repeat;
+}
+input[type="range"]:nth-child(2)::-webkit-slider-thumb {
+    display: none;
+}
