@@ -166,12 +166,12 @@ label:before {
     width: 80%;
     color: #fff;
     margin-top: 10px;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: lighter;
     line-height: 120%;
 }
 .hero .profile-text .text-2 {
-    width: 50%;
+    width: 55%;
     display: flex;
     margin-top: 40px;
     align-items: center;
