@@ -415,13 +415,14 @@ input[type="range"]:nth-child(2)::-webkit-slider-thumb {
         display: none;
     }
     .hero-section {
+        width: 100%;
         margin: 0;
         padding: 0;
         flex-direction: column;
         align-items: unset;
     }
     .left-container {
-        width: 100%;
+        width: 90%;
         height: 60vh;
         border-radius: 20px;
         margin: 10px 20px;
@@ -460,12 +461,15 @@ input[type="range"]:nth-child(2)::-webkit-slider-thumb {
     }
 
     .charts-container {
-        padding: 40px;
+        height: 20vh;
         width: 200%;
         align-items: unset;
     }
+    .charts-container .c-div {
+        align-items: unset;
+    }
     .c-div {
-        width: 100%;
+        width: 200px;
         flex-direction: column;
     }
     .c-div div {

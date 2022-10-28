@@ -176,7 +176,6 @@ label:before {
     background-image: url(/CollectionsPage/img/collection1.jpg);
     background-size: cover;
     background-position: center;
-    /* background-size: contain; */
     width: 20%;
     height: 30vh;
 }
@@ -189,10 +188,7 @@ label:before {
 .div4 {
     background-image: url(/CollectionsPage/img/collectiion5.jpg);
 }
-/* .div1:hover,
-.div1:focus {
-  transform: scale(1.2);
-} */
+
 .div-contents1 {
     position: absolute;
     top: 40%;
@@ -202,6 +198,7 @@ label:before {
     width: 13%;
     justify-content: space-between;
     z-index: 1000;
+    transition: 1s ease-in-out;
 }
 .div-contents2 {
     position: absolute;
@@ -247,6 +244,7 @@ label:before {
     font-size: 0px;
     font-weight: 100;
     color: #e4e1e1;
+    transition: 1s ease-in-out;
 }
 .div1:hover,
 .div2:hover,
@@ -258,7 +256,7 @@ label:before {
 .div4:hover .div-contents4
  {
     top: 36%;
-    transition: 1s;    
+    transition: 1s ease-in-out;    
     background-size: 330px;
     background-position: 60% 10%;
 }
@@ -268,6 +266,7 @@ label:before {
 .div4:hover .div-contents4::after
  {
     font-size: 10px;
+    transition: 1s ease-in-out;
 }
 
 
