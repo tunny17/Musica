@@ -175,6 +175,8 @@ label:before {
  {
     background-image: url(/CollectionsPage/img/collection1.jpg);
     background-size: cover;
+    background-position: center;
+    /* background-size: contain; */
     width: 20%;
     height: 30vh;
 }
@@ -187,7 +189,11 @@ label:before {
 .div4 {
     background-image: url(/CollectionsPage/img/collectiion5.jpg);
 }
-.hero-section .artworks .div1 .div-contents {
+/* .div1:hover,
+.div1:focus {
+  transform: scale(1.2);
+} */
+.div-contents1 {
     position: absolute;
     top: 40%;
     left: 7%;
@@ -197,7 +203,7 @@ label:before {
     justify-content: space-between;
     z-index: 1000;
 }
-.hero-section .artworks .div2 .div-contents {
+.div-contents2 {
     position: absolute;
     top: 40%;
     left: 24%;
@@ -206,7 +212,7 @@ label:before {
     width: 13%;
     justify-content: space-between;
 }
-.hero-section .artworks .div3 .div-contents {
+.div-contents3 {
     position: absolute;
     top: 40%;
     left: 41%;
@@ -215,7 +221,7 @@ label:before {
     width: 13%;
     justify-content: space-between;
 }
-.hero-section .artworks .div4 .div-contents {
+.div-contents4 {
     position: absolute;
     top: 40%;
     left: 58%;
@@ -224,19 +230,49 @@ label:before {
     width: 13%;
     justify-content: space-between;
 }
-.hero-section .artworks .div-contents h4 {
+.artworks h4 {
     font-size: 23px;
     font-weight: lighter;
 }
-.hero-section .artworks .div-contents .p1{
+.artworks p{
+    margin-top: 5px;
     font-size: 10px;
     font-weight: lighter;
 }
-.hero-section .artworks .div-contents .p2{
-    font-size: 8px;
-    font-weight: lighter;
-    margin: 3em 0;
+.artworks div::after {
+    content: "2.3m Likes";
+    position: absolute;
+    top: 60px;
+    left: 1px;
+    font-size: 0px;
+    font-weight: 100;
+    color: #e4e1e1;
 }
+.div1:hover,
+.div2:hover,
+.div3:hover,
+.div4:hover,
+.div1:hover .div-contents1,
+.div2:hover .div-contents2,
+.div3:hover .div-contents3,
+.div4:hover .div-contents4
+ {
+    top: 36%;
+    transition: 1s;    
+    background-size: 330px;
+    background-position: 60% 10%;
+}
+.div1:hover .div-contents1::after,
+.div2:hover .div-contents2::after,
+.div3:hover .div-contents3::after,
+.div4:hover .div-contents4::after
+ {
+    font-size: 10px;
+}
+
+
+
+
 
 
 
