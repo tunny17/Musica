@@ -419,154 +419,157 @@ input[type="range"]:nth-child(2)::-webkit-slider-thumb {
     and (device-height : 812px) 
     and (-webkit-device-pixel-ratio : 3) {
 
-        .logo-container {
-            display: flex;
-            padding-top: 12px;
-        }
-        .logo-container img:nth-child(1) {
-            display: block;
-            width: 19px;
-            height: 17px;
-            margin: 6px 30px 0 4%;
-        }
-        .search-section {
-            position: relative;
-            padding-left: 20%;
-        }
-        .search-section input {
-            margin-top: 10px;
-            width: unset;
-        }
-        label:before {
-            left: 90%;
-        }
-        .search-section input:focus {
-            border: none;
-            outline: none;
-        }
-        .search-section input::placeholder {
-            color: transparent;
-        }
-        .navigation-section {
-            position: absolute;
-            padding: 0;
-            justify-content: unset;
-        }
-        .width {
-            width: 100%;
-        }
-        .nav-1, .nav-2 {
-            display: none;
-            margin: 0;
-            border-radius: unset;
-        }
-    
-        .nav-1 a,
-        .nav-2 a
-         {
-            display: flex;
-            align-items: center;
-            text-decoration: none;
-        }
-        .nav-2 a {
-            align-items: unset;
-        }
-    
-        .nav-1 a p,
-        .nav-2 a p {
-            font-size: 1.1em;
-            display: block;
-            margin-left: 10%;
-            text-decoration: none;
-            color: #fff
-        }
-        .nav-1 a:nth-child(1) p {
-            font-size: 0.8em;
-            margin-left: 9%;
-        }
-        .nav-2 img {
-            margin-bottom: 20px;
-        }
-    
-    
-        .nav-1, .nav-2 {
-            padding: 30px 10vh 20px 10px;
-        }
-    
-        .visible {
-            display: block;
-        }
-    
-        .background-color {
-            background-color: #1A1E1F;
-        }
+    .body {
+        height: 100vh;
+    }
+    .logo-container {
+        display: flex;
+        padding-top: 12px;
+    }
+    .logo-container img:nth-child(1) {
+        display: block;
+        width: 19px;
+        height: 17px;
+        margin: 6px 30px 0 4%;
+    }
+    .search-section {
+        position: relative;
+        padding-left: 20%;
+    }
+    .search-section input {
+        margin-top: 10px;
+        width: unset;
+    }
+    label:before {
+        left: 90%;
+    }
+    .search-section input:focus {
+        border: none;
+        outline: none;
+    }
+    .search-section input::placeholder {
+        color: transparent;
+    }
+    .navigation-section {
+        position: absolute;
+        padding: 0;
+        justify-content: unset;
+    }
+    .width {
+        width: 100%;
+    }
+    .nav-1, .nav-2 {
+        display: none;
+        margin: 0;
+        border-radius: unset;
+    }
+
+    .nav-1 a,
+    .nav-2 a
+        {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+    .nav-2 a {
+        align-items: unset;
+    }
+
+    .nav-1 a p,
+    .nav-2 a p {
+        font-size: 1.1em;
+        display: block;
+        margin-left: 10%;
+        text-decoration: none;
+        color: #fff
+    }
+    .nav-1 a:nth-child(1) p {
+        font-size: 0.8em;
+        margin-left: 9%;
+    }
+    .nav-2 img {
+        margin-bottom: 20px;
+    }
+
+
+    .nav-1, .nav-2 {
+        padding: 30px 10vh 20px 10px;
+    }
+
+    .visible {
+        display: block;
+    }
+
+    .background-color {
+        background-color: #1A1E1F;
+    }
 
 
 
 
 
 
-        .hero-section {
-            margin: 0;
-            /* margin-left: 20px; */
-        }
-        .hero-nav nav {
-            width: 90%;
-        }
+    .hero-section {
+        margin: 0;
+        /* margin-left: 20px; */
+    }
+    .hero-nav nav {
+        width: 90%;
+    }
 
-        .hero-nav nav p {
-            padding: 10px 35px;
-        }
+    .hero-nav nav p {
+        padding: 10px 35px;
+    }
 
-        .hero-nav nav p:nth-child(2) {
-            padding: 9px 55px;
-        }
-        .artworks {
-            flex-direction: column;
-            width: unset;
-        }
-        .hero-section .artworks div {
-            margin-right: 10px;
-            z-index: -1000;
-        }
-        .div1, .div2, .div3, .div4 {
-            width: 96%;
-            height: 34vh;
-        }
-        .div-contents1,
-        .div-contents2,
-        .div-contents3,
-        .div-contents4
-         {
-            top: 38%;
-            left: 13%;
-            width: 80%;
-        }
-        .div-contents2 {
-            top: 72%;
-        }
-        .div-contents3 {
-            top: 107%;
-        }
-        .div-contents4 {
-            top: 143%;
-        }
-        .artworks h5 {
-            display: block;
-            font-size: 7px;
-            font-weight: 100;
-            margin-top: 30%;
-            height: 100vh;
-        }
-        .hero-section .artworks .div-contents2 div img {
-            width: 80%;
-        }
+    .hero-nav nav p:nth-child(2) {
+        padding: 9px 55px;
+    }
+    .artworks {
+        flex-direction: column;
+        width: unset;
+    }
+    .hero-section .artworks div {
+        margin-right: 10px;
+        z-index: -1000;
+    }
+    .div1, .div2, .div3, .div4 {
+        width: 96%;
+        height: 34vh;
+    }
+    .div-contents1,
+    .div-contents2,
+    .div-contents3,
+    .div-contents4
+        {
+        top: 38%;
+        left: 13%;
+        width: 80%;
+    }
+    .div-contents2 {
+        top: 72%;
+    }
+    .div-contents3 {
+        top: 105%;
+    }
+    .div-contents4 {
+        top: 140%;
+    }
+    .artworks h5 {
+        display: block;
+        font-size: 7px;
+        font-weight: 100;
+        margin-top: 30%;
+        height: 100vh;
+    }
+    .hero-section .artworks .div-contents2 div img {
+        width: 80%;
+    }
 
 
 
-        .controllers-section {
-            display: none;
-        }
+    .controllers-section {
+        display: none;
+    }
 }
 
 
