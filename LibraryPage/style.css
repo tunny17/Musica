@@ -44,6 +44,9 @@ body::-webkit-scrollbar {
     width: 1.7em;
     cursor: pointer;
 }
+.menu {
+    display: none;
+}
 
 /* second div on the left nav */
 .nav-1 {
@@ -76,6 +79,11 @@ body::-webkit-scrollbar {
 }
 .nav-1 a:nth-child(1) {
     font-size: 1em;
+}
+.nav-1 a p,
+.nav-2 a p 
+ { 
+    display: none;
 }
 /* third div on the left nav */
 .nav-2 {
@@ -377,4 +385,115 @@ input[type="range"]:nth-child(2)::-webkit-slider-thumb {
     background: #FACD66;
     border: 1px solid #FFFFFF;
     box-shadow: 0 0 2px 0 rgba(255, 255, 255, 0.04);
+}
+
+
+
+
+
+
+
+/* media query   */
+
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) {
+
+    .logo-container {
+        display: flex;
+        padding-top: 12px;
+    }
+    .logo-container img:nth-child(1) {
+        display: block;
+        width: 19px;
+        height: 17px;
+        margin: 6px 30px 0 4%;
+    }
+    .navigation-section {
+        position: absolute;
+        padding: 0;
+        justify-content: unset;
+    }
+    .width {
+        width: 100%;
+    }
+    .nav-1, .nav-2 {
+        display: none;
+        margin: 0;
+        border-radius: unset;
+    }
+
+    .nav-1 a,
+    .nav-2 a
+        {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+    .nav-2 a {
+        align-items: unset;
+    }
+
+    .nav-1 a p,
+    .nav-2 a p {
+        font-size: 1em;
+        display: block;
+        margin-left: 10%;
+        text-decoration: none;
+        color: #fff
+    }
+    .nav-1 a:nth-child(1) p {
+        font-size: 0.8em;
+        margin-left: 30px;
+    }
+    .nav-2 img {
+        margin-bottom: 20px;
+    }
+    .nav-2 a  p {
+        font-size: 13px;
+    }
+    .nav-1, .nav-2 {
+        padding: 30px 0 20px 10px;
+    }
+
+    .visible {
+        display: block;
+    }
+
+    .background-color {
+        background-color: #1A1E1F;
+    }
+
+
+
+
+    .search-section {
+        position: relative;
+        padding-left: 20%;
+    }
+    .search-section input {
+        margin-top: 10px;
+        width: unset;
+        z-index: -20000;
+    }
+    label:before {
+        left: 80%;
+    }
+    .search-section input:focus {
+        border: none;
+        outline: none;
+    }
+    .search-section input::placeholder {
+        color: transparent;
+    }
+
+
+
+
+
+    .controllers {
+        display: none;
+    }
+
 }

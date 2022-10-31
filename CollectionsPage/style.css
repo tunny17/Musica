@@ -419,18 +419,15 @@ input[type="range"]:nth-child(2)::-webkit-slider-thumb {
     and (device-height : 812px) 
     and (-webkit-device-pixel-ratio : 3) {
 
-        .body {
-            /* height: 100vh; */
-        }
         .logo-container {
             display: flex;
             padding-top: 12px;
         }
         .logo-container img:nth-child(1) {
             display: block;
-            width: 5%;
-            height: 60%;
-            margin: 6px 10% 0 4%;
+            width: 19px;
+            height: 17px;
+            margin: 6px 30px 0 4%;
         }
         .search-section {
             position: relative;
@@ -452,10 +449,11 @@ input[type="range"]:nth-child(2)::-webkit-slider-thumb {
         }
         .navigation-section {
             position: absolute;
-            width: 100%;
             padding: 0;
-            z-index: 1000;
             justify-content: unset;
+        }
+        .width {
+            width: 100%;
         }
         .nav-1, .nav-2 {
             display: none;
@@ -583,9 +581,9 @@ and (-webkit-device-pixel-ratio : 2) {
     }
     .logo-container img:nth-child(1) {
         display: block;
-        width: 5%;
-        height: 60%;
-        margin: 6px 10% 0 4%;
+        width: 19px;
+        height: 17px;
+        margin: 6px 30px 0 4%;
     }
     .search-section {
         position: relative;
@@ -607,10 +605,11 @@ and (-webkit-device-pixel-ratio : 2) {
     }
     .navigation-section {
         position: absolute;
-        width: 100%;
         padding: 0;
-        z-index: 1000;
         justify-content: unset;
+    }
+    .width {
+        width: 100%;
     }
     .nav-1, .nav-2 {
         display: none;
@@ -736,9 +735,9 @@ and (-webkit-device-pixel-ratio : 2) {
     }
     .logo-container img:nth-child(1) {
         display: block;
-        width: 5%;
-        height: 60%;
-        margin: 6px 10% 0 4%;
+        width: 19px;
+        height: 17px;
+        margin: 6px 30px 0 4%;
     }
     .search-section {
         position: relative;
@@ -760,10 +759,11 @@ and (-webkit-device-pixel-ratio : 2) {
     }
     .navigation-section {
         position: absolute;
-        width: 100%;
         padding: 0;
-        z-index: 1000;
         justify-content: unset;
+    }
+    .width {
+        width: 100%;
     }
     .nav-1, .nav-2 {
         display: none;

@@ -2,6 +2,7 @@ let logoContainer = document.getElementById('logoContainer');
 let navOne = document.getElementById('nav1');
 let navTwo = document.getElementById('nav2');
 let menu = document.getElementById('menu');
+let navigationSection = document.getElementById('navigationSect');
   
 
 
@@ -14,6 +15,7 @@ function changeNav() {
   } else {
     document.getElementById('menu').src = '/img/home/menu.svg';
   }
+  navigationSection.classList.toggle('width');
   logoContainer.classList.toggle('background-color');
   navOne.classList.toggle('visible');
   navTwo.classList.toggle('visible');
