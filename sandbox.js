@@ -25,7 +25,6 @@ rangeInputs.forEach(input => {
   
 
 
-
 menu.addEventListener('click', changeNav);
 
 function changeNav() {
@@ -35,7 +34,6 @@ function changeNav() {
   } else {
     document.getElementById('menu').src = '/img/home/hammenu.svg';
   }
-  console.log('yam');
   logoContainer.classList.toggle('background-color');
   navOne.classList.toggle('visible');
   navTwo.classList.toggle('visible');
