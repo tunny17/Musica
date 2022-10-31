@@ -216,6 +216,7 @@ label:before {
     display: flex;
     width: 13%;
     justify-content: space-between;
+    transition: 1s ease-in-out;
 }
 .div-contents3 {
     position: absolute;
@@ -225,6 +226,7 @@ label:before {
     display: flex;
     width: 13%;
     justify-content: space-between;
+    transition: 1s ease-in-out;
 }
 .div-contents4 {
     position: absolute;
@@ -234,6 +236,7 @@ label:before {
     display: flex;
     width: 13%;
     justify-content: space-between;
+    transition: 1s ease-in-out;
 }
 .artworks h4 {
     font-size: 23px;
@@ -566,4 +569,311 @@ input[type="range"]:nth-child(2)::-webkit-slider-thumb {
         .controllers-section {
             display: none;
         }
+}
+
+
+
+@media only screen 
+and (device-width : 375px) 
+and (device-height : 667px) 
+and (-webkit-device-pixel-ratio : 2) { 
+    .logo-container {
+        display: flex;
+        padding-top: 12px;
     }
+    .logo-container img:nth-child(1) {
+        display: block;
+        width: 5%;
+        height: 60%;
+        margin: 6px 10% 0 4%;
+    }
+    .search-section {
+        position: relative;
+        padding-left: 20%;
+    }
+    .search-section input {
+        margin-top: 10px;
+        width: unset;
+    }
+    label:before {
+        left: 90%;
+    }
+    .search-section input:focus {
+        border: none;
+        outline: none;
+    }
+    .search-section input::placeholder {
+        color: transparent;
+    }
+    .navigation-section {
+        position: absolute;
+        width: 100%;
+        padding: 0;
+        z-index: 1000;
+        justify-content: unset;
+    }
+    .nav-1, .nav-2 {
+        display: none;
+        margin: 0;
+        border-radius: unset;
+    }
+
+    .nav-1 a,
+    .nav-2 a
+        {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+    .nav-2 a {
+        align-items: unset;
+    }
+
+    .nav-1 a p,
+    .nav-2 a p {
+        font-size: 1.1em;
+        display: block;
+        margin-left: 10%;
+        text-decoration: none;
+        color: #fff
+    }
+    .nav-1 a:nth-child(1) p {
+        font-size: 0.8em;
+        margin-left: 9%;
+    }
+    .nav-2 img {
+        margin-bottom: 20px;
+    }
+
+
+    .nav-1, .nav-2 {
+        padding: 30px 10vh 20px 10px;
+    }
+
+    .visible {
+        display: block;
+    }
+
+    .background-color {
+        background-color: #1A1E1F;
+    }
+
+
+
+
+
+
+    .hero-section {
+        margin: 0;
+    }
+    .hero-nav nav {
+        width: 90%;
+    }
+
+    .hero-nav nav p {
+        padding: 10px 35px;
+    }
+
+    .hero-nav nav p:nth-child(2) {
+        padding: 9px 55px;
+    }
+    .artworks {
+        flex-direction: column;
+        width: unset;
+    }
+    .hero-section .artworks div {
+        margin-right: 10px;
+        z-index: -1000;
+    }
+    .div1, .div2, .div3, .div4 {
+        width: 96%;
+        height: 34vh;
+    }
+    .div-contents1,
+    .div-contents2,
+    .div-contents3,
+    .div-contents4
+        {
+        top: 38%;
+        left: 13%;
+        width: 80%;
+    }
+    .div-contents2 {
+        top: 72%;
+    }
+    .div-contents3 {
+        top: 107%;
+    }
+    .div-contents4 {
+        top: 143%;
+    }
+    .artworks h5 {
+        display: block;
+        font-size: 7px;
+        font-weight: 100;
+        margin-top: 30%;
+        height: 100vh;
+    }
+    .hero-section .artworks .div-contents2 div img {
+        width: 80%;
+    }
+
+
+
+    .controllers-section {
+        display: none;
+    }
+}
+
+
+@media only screen 
+    and (device-width : 414px) 
+    and (device-height : 736px) 
+    and (-webkit-device-pixel-ratio : 3) {
+    .logo-container {
+        display: flex;
+        padding-top: 12px;
+    }
+    .logo-container img:nth-child(1) {
+        display: block;
+        width: 5%;
+        height: 60%;
+        margin: 6px 10% 0 4%;
+    }
+    .search-section {
+        position: relative;
+        padding-left: 20%;
+    }
+    .search-section input {
+        margin-top: 10px;
+        width: unset;
+    }
+    label:before {
+        left: 90%;
+    }
+    .search-section input:focus {
+        border: none;
+        outline: none;
+    }
+    .search-section input::placeholder {
+        color: transparent;
+    }
+    .navigation-section {
+        position: absolute;
+        width: 100%;
+        padding: 0;
+        z-index: 1000;
+        justify-content: unset;
+    }
+    .nav-1, .nav-2 {
+        display: none;
+        margin: 0;
+        border-radius: unset;
+    }
+
+    .nav-1 a,
+    .nav-2 a
+        {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+    .nav-2 a {
+        align-items: unset;
+    }
+
+    .nav-1 a p,
+    .nav-2 a p {
+        font-size: 1.1em;
+        display: block;
+        margin-left: 10%;
+        text-decoration: none;
+        color: #fff
+    }
+    .nav-1 a:nth-child(1) p {
+        font-size: 0.8em;
+        margin-left: 9%;
+    }
+    .nav-2 img {
+        margin-bottom: 20px;
+    }
+
+
+    .nav-1, .nav-2 {
+        padding: 30px 10vh 20px 10px;
+    }
+
+    .visible {
+        display: block;
+    }
+
+    .background-color {
+        background-color: #1A1E1F;
+    }
+
+
+
+
+
+
+    .hero-section {
+        margin: 0;
+    }
+    .hero-nav nav {
+        width: 90%;
+    }
+
+    .hero-nav nav p {
+        padding: 10px 35px;
+    }
+
+    .hero-nav nav p:nth-child(2) {
+        padding: 9px 55px;
+    }
+    .artworks {
+        flex-direction: column;
+        width: unset;
+    }
+    .hero-section .artworks div {
+        margin-right: 10px;
+        z-index: -1000;
+    }
+    .div1, .div2, .div3, .div4 {
+        width: 96%;
+        height: 34vh;
+    }
+    .div-contents1,
+    .div-contents2,
+    .div-contents3,
+    .div-contents4
+        {
+        top: 38%;
+        left: 10%;
+        width: 80%;
+    }
+    .div-contents2 {
+        top: 72%;
+    }
+    .div-contents3 {
+        top: 106%;
+    }
+    .div-contents4 {
+        top: 141%;
+    }
+    .artworks h5 {
+        display: block;
+        font-size: 7px;
+        font-weight: 100;
+        margin-top: 30%;
+        height: 100vh;
+    }
+    .hero-section .artworks .div-contents2 div img {
+        width: 80%;
+    }
+
+
+
+    .controllers-section {
+        display: none;
+    }
+}
