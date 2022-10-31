@@ -637,18 +637,100 @@ input[type="range"]:nth-child(2)::-webkit-slider-thumb {
 }
 
 /* iphone 8 */
-/* 
+
 @media only screen 
     and (device-width : 375px) 
     and (device-height : 667px) 
     and (-webkit-device-pixel-ratio : 2) { 
 
+        .logo-container {
+            display: flex;
+            padding-top: 12px;
+        }
+        .logo-container img:nth-child(1) {
+            display: block;
+            width: 5%;
+            height: 60%;
+            margin: 6px 10% 0 4%;
+        }
+        .search-section {
+            padding-left: 10%;
+        }
+        .search-section input {
+            width: unset;
+        }
+        label:before {
+            left: 95%;    
+        }
+        .search-section input:focus {
+            border: none;
+            outline: none;
+        }
+        .search-section input::placeholder {
+            color: transparent;
+        }
         .navigation-section {
             position: absolute;
+            width: 100%;
+            padding: 0;
+            justify-content: unset;
         }
         .nav-1, .nav-2 {
             display: none;
+            border-radius: unset;
         }
+    
+        .nav-1 a,
+        .nav-2 a
+         {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+        .nav-2 a {
+            align-items: unset;
+        }
+    
+        .nav-1 a p,
+        .nav-2 a p {
+            font-size: 1.1em;
+            display: block;
+            margin-left: 10%;
+            text-decoration: none;
+            color: #fff
+        }
+        .nav-1 a:nth-child(1) p {
+            font-size: 0.8em;
+            margin-left: 9%;
+        }
+        .nav-2 img {
+            margin-bottom: 20px;
+        }
+    
+    
+        .nav-1, .nav-2 {
+            padding: 30px 10vh 20px 10px;
+        }
+    
+        .visible {
+            display: block;
+        }
+    
+        .background-color {
+            background-color: #1A1E1F;
+        }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
         .search-section {
             position: unset;
         }
@@ -725,8 +807,8 @@ input[type="range"]:nth-child(2)::-webkit-slider-thumb {
             font-size: 9px;
         }
         .c-div p {
-            margin-top: 5px;
-            font-size: 9px;
+            margin-top: 0px;
+            font-size: 7px;
         }
         .heart {
             margin-top: 0;
@@ -758,7 +840,7 @@ input[type="range"]:nth-child(2)::-webkit-slider-thumb {
     
         .controllers {
             position: fixed;
-            top: 598px;
+            top: 600px;
         }
     
         .controls {
@@ -774,4 +856,4 @@ input[type="range"]:nth-child(2)::-webkit-slider-thumb {
         .right-controller {
             display: none;
         }
-    } */
+    }

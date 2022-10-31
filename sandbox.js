@@ -35,12 +35,6 @@ function changeNav() {
   } else {
     document.getElementById('menu').src = '/img/home/hammenu.svg';
   }
-  // let buttonSrc = document.getElementById("menu").src;
-  // if (buttonSrc.indexOf('/img/menu.svg')!=-1) {
-  //     document.getElementById("menu").src = '/img/icon-close.svg'
-  // } else {
-  //     document.getElementById("menu").src ='/img/menu.svg'
-  // }
   console.log('yam');
   logoContainer.classList.toggle('background-color');
   navOne.classList.toggle('visible');
