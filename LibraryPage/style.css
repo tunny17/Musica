@@ -916,3 +916,345 @@ input[type="range"]:nth-child(2)::-webkit-slider-thumb {
     }
 
 }
+
+
+/* iphone 12 pro */
+@media only screen 
+    and (device-width : 390px) 
+    and (device-height : 844px) 
+    and (-webkit-device-pixel-ratio : 3) { 
+    body {
+        background-size: 1600px;
+        background-position: 40% 10%;
+    }
+
+    .logo-container {
+        display: flex;
+        padding-top: 12px;
+    }
+    .logo-container img:nth-child(1) {
+        display: block;
+        width: 19px;
+        height: 17px;
+        margin: 6px 30px 0 4%;
+    }
+    .navigation-section {
+        position: absolute;
+        padding: 0;
+        justify-content: unset;
+    }
+    .width {
+        width: 100%;
+    }
+    .nav-1, .nav-2 {
+        display: none;
+        margin: 0;
+        border-radius: unset;
+    }
+
+    .nav-1 a,
+    .nav-2 a
+        {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+    .nav-2 a {
+        align-items: unset;
+    }
+
+    .nav-1 a p,
+    .nav-2 a p {
+        font-size: 1em;
+        display: block;
+        margin-left: 10%;
+        text-decoration: none;
+        color: #fff
+    }
+    .nav-1 a:nth-child(1) p {
+        font-size: 0.8em;
+        margin-left: 30px;
+    }
+    .nav-2 img {
+        margin-bottom: 20px;
+    }
+    .nav-2 a  p {
+        font-size: 13px;
+    }
+    .nav-1, .nav-2 {
+        padding: 30px 0 20px 10px;
+    }
+
+    .visible {
+        display: block;
+    }
+
+    .background-color {
+        background-color: #1A1E1F;
+    }
+
+
+
+
+    .search-section {
+        position: relative;
+        padding-left: 20%;
+    }
+    .search-section input {
+        margin-top: 10px;
+        width: unset;
+        z-index: -20000;
+    }
+    label:before {
+        left: 80%;
+    }
+    .search-section input:focus {
+        border: none;
+        outline: none;
+    }
+    .search-section input::placeholder {
+        color: transparent;
+    }
+
+
+
+    .hero {
+        width: unset;
+        margin: 0;
+        flex-direction: column;
+    }
+    .hero .profile-picture {
+        width: 100%;
+        height: 35vh;
+    }
+    .hero .profile-picture img {
+        width: 90%;
+        height: 100%;
+    }
+    .hero .profile-text {
+        margin: 20px 0 10px 2px;
+    }
+    .hero .profile-text .text-1 p {
+        width: unset;
+    }
+    .hero .profile-text .text-2 {
+        width: 90%;
+    }
+    .tracklist-section {
+        height: 67vh;
+        margin-left: 20px;
+    }
+    .tracklist-container {
+        width: 89%;
+        border-radius: 10px;
+    }
+    .artwork {
+        width: 17%;
+        margin-right: 10px;
+    }
+    .artwork img:nth-child(1) {
+        width: 100%;
+        border-radius: 9px;
+    }
+    .empty-heart {
+        display: none;
+    }
+    .middle-text {
+        width: 100%;
+        flex-direction: column;
+    }
+    .middle-text p:nth-child(1) {
+        font-size: 10px;
+    }
+    .middle-text p:nth-child(2) {
+        font-size: 9px;
+        margin-top: 3px;
+    }
+    .latter-text {
+        align-items: flex-end;
+        height: 5vh;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+    }
+    .latter-text img {
+        width: 30%;
+    }
+
+
+
+
+    .controllers {
+        display: none;
+    }
+
+}
+
+/* iphone xr */
+@media only screen 
+    and (device-width : 414px) 
+    and (device-height : 896px) 
+    and (-webkit-device-pixel-ratio : 2) { 
+    body {
+        background-size: 1600px;
+        background-position: 40% 10%;
+    }
+
+    .logo-container {
+        display: flex;
+        padding-top: 12px;
+    }
+    .logo-container img:nth-child(1) {
+        display: block;
+        width: 19px;
+        height: 17px;
+        margin: 6px 30px 0 4%;
+    }
+    .navigation-section {
+        position: absolute;
+        padding: 0;
+        justify-content: unset;
+    }
+    .width {
+        width: 100%;
+    }
+    .nav-1, .nav-2 {
+        display: none;
+        margin: 0;
+        border-radius: unset;
+    }
+
+    .nav-1 a,
+    .nav-2 a
+        {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+    .nav-2 a {
+        align-items: unset;
+    }
+
+    .nav-1 a p,
+    .nav-2 a p {
+        font-size: 1em;
+        display: block;
+        margin-left: 10%;
+        text-decoration: none;
+        color: #fff
+    }
+    .nav-1 a:nth-child(1) p {
+        font-size: 0.8em;
+        margin-left: 30px;
+    }
+    .nav-2 img {
+        margin-bottom: 20px;
+    }
+    .nav-2 a  p {
+        font-size: 13px;
+    }
+    .nav-1, .nav-2 {
+        padding: 30px 0 20px 10px;
+    }
+
+    .visible {
+        display: block;
+    }
+
+    .background-color {
+        background-color: #1A1E1F;
+    }
+
+
+
+
+    .search-section {
+        position: relative;
+        padding-left: 20%;
+    }
+    .search-section input {
+        margin-top: 10px;
+        width: unset;
+        z-index: -20000;
+    }
+    label:before {
+        left: 80%;
+    }
+    .search-section input:focus {
+        border: none;
+        outline: none;
+    }
+    .search-section input::placeholder {
+        color: transparent;
+    }
+
+
+
+    .hero {
+        width: unset;
+        margin: 0;
+        flex-direction: column;
+    }
+    .hero .profile-picture {
+        width: 100%;
+        height: 35vh;
+    }
+    .hero .profile-picture img {
+        width: 90%;
+        height: 100%;
+    }
+    .hero .profile-text {
+        margin: 20px 0 10px 2px;
+    }
+    .hero .profile-text .text-1 p {
+        width: unset;
+    }
+    .hero .profile-text .text-2 {
+        width: 90%;
+    }
+    .tracklist-section {
+        height: 67vh;
+        margin-left: 20px;
+    }
+    .tracklist-container {
+        width: 89%;
+        border-radius: 10px;
+    }
+    .artwork {
+        width: 17%;
+        margin-right: 10px;
+    }
+    .artwork img:nth-child(1) {
+        width: 100%;
+        border-radius: 9px;
+    }
+    .empty-heart {
+        display: none;
+    }
+    .middle-text {
+        width: 100%;
+        flex-direction: column;
+    }
+    .middle-text p:nth-child(1) {
+        font-size: 10px;
+    }
+    .middle-text p:nth-child(2) {
+        font-size: 9px;
+        margin-top: 3px;
+    }
+    .latter-text {
+        align-items: flex-end;
+        height: 5vh;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+    }
+    .latter-text img {
+        width: 30%;
+    }
+
+
+
+
+    .controllers {
+        display: none;
+    }
+}
